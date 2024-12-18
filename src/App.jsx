@@ -39,7 +39,7 @@ function App() {
         <div className='flex flex-col rounded-md justify-center items-center gap-5 bg-blue-600 max-w-[750px] w-full'>
           <h1 className='text-white text-2xl font-bold underline'>Text To Image Generator</h1>
           <textarea name="inputData" id="inputData" rows={5} className='outline-blue-400 font-semibold rounded-md p-1 max-w-[400px] w-[60%]' value={input} onChange={(e)=>{setInput(e.target.value)}}></textarea>
-          <button onClick={e=>{ImageGeneration(input)}} className='text-white border-[2px] border-white rounded-full px-3 py-1 font-semibold my-2'>Generate Image</button>
+          <button onClick={()=>{ImageGeneration(input)}} className='text-white border-[2px] border-white rounded-full px-3 py-1 font-semibold my-2'>Generate Image</button>
         </div>
         <div className="ImageContainer" ref={imageContainerRef}>
         </div>
